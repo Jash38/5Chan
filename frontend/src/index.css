@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.modal {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 90%; 
+    max-width: 600px; 
+    background-color: #333; 
+    padding: 20px; 
+    color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+}
+
+.title input,
+.author input,
+.text textarea {
+    width: calc(100% - 20px); 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 1em; 
+    margin-bottom: 20px; 
+}
+
+.title input,
+.author input {
+    height: 45px;
+}
+
+.text textarea {
+    resize: none; 
+    height: 120px; 
+}
+
+.postList {
+    margin: 20px;
+  }
+  
+  .postItem {
+    margin-bottom: 15px; 
+    list-style-type: none;
+  }
+  
+  .inListPost {
+    border: 2px solid #e1e1e1; 
+    border-radius: 8px; 
+    padding: 15px; 
+    background-color: #ffffff; 
+  }
+  
+  .inPostTitle {
+    font-size: 1.5em; 
+    margin: 0; 
+    color: #333; 
+  }
+  
+  .inPostAuthor {
+    font-size: 0.9em; 
+    margin: 5px 0; 
+  }
+  
+  .inPostText {
+    font-size: 1em;
+    margin-top: 10px; 
+  }
+
+/* .galaxyIntro {
+    background-image: url('/public/purple_galaxy1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px; 
+  }
+    */
+  button {
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #6d28d9; 
+  }
+  button:hover {
+    background-color: #5b21b6; 
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 4px 15px rgba(91, 33, 182, 0.7); /* Stronger shadow on hover */
+    transition: transform 0.3s;
+  }
+  .pageText{
+    color: white;
+    text-align: center;
+  }
+
+  
